@@ -5,6 +5,9 @@
     <title>Invi - Mejores Guitarras</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
     <link rel="stylesheet" href="css/invie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
+
   </head>
   <body>
     <section id="portada" class="portada background"><!--portada-->
@@ -12,7 +15,8 @@
         <figure class="logotipo"><!--logo-->
           <img src="images/invie.png" width="186" height="60"alt="Invie logotipo">
         </figure>
-        <nav class="menu"><!--menu-->
+        <span class="burguer-button icon-menu" id="burguer-button"></span>
+        <nav class="menu" id="menu"><!--menu-->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#guitarras">Guitarras</a></li>
@@ -29,7 +33,7 @@
     <section id="guitarras" class="guitarras contenedor"><!--guitarras-->
       <h2>Nuestras guitarras</h2><!-- titulo -->
       <article class="guitarra">  <!-- guitarra 1 -->
-        <img class="derecha" src="images/invie-acustica.png" width="350" alt="acustica">
+        <img class="derecha" data-src="images/invie-acustica.png" width="350" alt="acustica">
         <div class="contenedor-guitarra-a">
           <h3 class="title-b">Invi Acústica</h3>
           <ol>
@@ -40,7 +44,7 @@
         </div>
       </article>
       <article class="guitarra b">  <!-- guitarra 2 -->
-        <img class="izquierda" src="images/invie-classic.png" width="350 "alt="classic">
+        <img class="izquierda" data-src="images/invie-classic.png" width="350 "alt="classic">
         <div class="contenedor-guitarra-b">
           <h3 class="title-b">Invi Classic</h3>
           <ol>
@@ -54,7 +58,7 @@
     <footer class="footer">
       <div class="contenedor">
         <div class="contacto">
-          <img src="images/invie-white.png" alt="logotipo-blanco">
+          <img data-src="images/invie-white.png" alt="logotipo-blanco">
           <a href="tel:+310 623 3683"><strong>Teléfono</strong> <span>310 623 3683</span></a>
           <a href="mailto:marlongm092@gmail.com"><strong>E-mail</strong> <span>marlongm092@gmail.com</span></a>
         </div>
@@ -95,5 +99,8 @@
         </form>
       </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+  <script src="js/query.js"></script>
   </body>
 </html>

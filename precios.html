@@ -5,6 +5,7 @@
     <title>Invi - Precios</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
     <link rel="stylesheet" href="css/invie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body>
     <header id="header" class="header background"><!--header-->
@@ -12,13 +13,14 @@
         <figure class="logotipo"><!--logo-->
           <img src="images/invie.png" width="186" height="60"alt="Invie logotipo">
         </figure>
-        <nav class="menu"><!--menu-->
+        <span class="burguer-button icon-menu" id="burguer-button"></span>
+        <nav class="menu" id="menu"><!--menu-->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#guitarras">Guitarras</a></li>
             <li><a href="precios.html">Precios</a></li>
           </ul>
-        </nav>    
+        </nav>
       </div>
     </header>
     <section class="tabla">
@@ -96,5 +98,7 @@
         </form>
       </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+  <script src="js/query.js"></script>
   </body>
 </html>
